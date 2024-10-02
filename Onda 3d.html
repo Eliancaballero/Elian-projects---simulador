@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style onda.css">
+    <title>Simulador de Ondas 3D con Plano Cartesiano</title>
+</head>
+<body>
+    <div id="waveCanvas"></div>
+    <div class="controls">
+        <div>
+            <h3>Controles Onda X</h3>
+            <label>
+                Amplitud Onda X:
+                <input type="range" id="amplitudeX" min="10" max="200" value="100">
+            </label>
+            <label>
+                Longitud de onda X:
+                <input type="range" id="lengthX" min="0.005" max="0.05" step="0.001" value="0.01">
+            </label>
+            <label>
+                Frecuencia X:
+                <input type="range" id="frequencyX" min="0.01" max="0.1" step="0.001" value="0.02">
+            </label>
+        </div>
+        <div>
+            <h3>Controles Onda Y</h3>
+            <label>
+                Amplitud Onda Y:
+                <input type="range" id="amplitudeY" min="10" max="200" value="100">
+            </label>
+            <label>
+                Longitud de onda Y:
+                <input type="range" id="lengthY" min="0.005" max="0.05" step="0.001" value="0.01">
+            </label>
+            <label>
+                Frecuencia Y:
+                <input type="range" id="frequencyY" min="0.01" max="0.1" step="0.001" value="0.02">
+            </label>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+    <script src="onda.js"></script>
+
+    ©Elian projects [2024]. Todos los derechos reservados.
